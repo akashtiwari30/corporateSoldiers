@@ -1,0 +1,106 @@
+/* Navbar container spacing */
+.navbar-nav {
+    gap: 15px; /* Use 'gap' instead of 'column-gap' for better support */
+}
+
+/* Common styles for nav links */
+.nav-link {
+    border: 1px solid #d3d3d3; /* Light gray border */
+    border-radius: 35px;
+    padding: 6px 23px !important; /* Adjusted for better click area */
+    font-size: 15px;
+    color: #333; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover state for nav links */
+.nav-link:hover {
+    color: #fff;
+    background-color: #007bff; /* Bootstrap’s primary blue */
+    border-color: #007bff;
+}
+
+/* Active link styling */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Optional: Focus state for accessibility */
+.nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+.navbar-brand{
+    text-align: center;
+    margin: 2px 10px;
+}
+.navbar-brand p{
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.navbar-brand .corporate{
+    font-size: 17px;
+    color: red;
+}
+.navbar-brand .soldiers{
+    font-size: 30px;
+    color: #044386;
+}
+
+
+
+
+/* --------------- */
+ body {
+        background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+        /* height: 100vh; */
+      }
+      h1{
+        font-size: 30px;
+      }
+      h2{
+        font-size: 25px;
+      }
+      .form-container {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 500px;
+        margin: 30px auto;
+      }
+      /* .form-container:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      } */
+      .error-message {
+        color: #dc3545;
+        font-size: 0.875em;
+        min-height: 1.25em;
+      }
+
+
+
+      /* ---------------- */
+       .card {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      .card:hover{
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      }
+      .invalid-feedback {
+        display: none;
+      }
+      .is-invalid ~ .invalid-feedback {
+        display: block;
+      }
+
+      /* .tast-two .form-container{
+        width: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+        background-color: transparent;
+      } */
